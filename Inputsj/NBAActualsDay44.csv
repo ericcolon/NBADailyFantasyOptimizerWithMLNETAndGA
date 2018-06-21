@@ -1,0 +1,112 @@
+M. Morris,PF,Pistons,false,24,5,9,1,2,2,2,2,5,0,0,0,0,2,-14,13,false
+T. Harris,SF,Pistons,false,26,6,11,1,4,4,5,1,1,2,1,0,0,2,-17,17,false
+A. Drummond,C,Pistons,false,27,4,12,0,1,0,0,5,9,1,0,0,1,2,-29,8,false
+R. Jackson,PG,Pistons,false,20,3,13,0,1,0,0,0,1,6,1,0,1,2,-11,6,false
+K. Caldwell-Pope,SG,Pistons,false,27,3,10,0,2,5,5,1,1,2,1,0,0,1,-29,11,false
+J. Leuer,PF,Pistons,false,22,3,6,0,0,2,2,2,5,1,0,0,0,2,-15,8,true
+S. Johnson,SF,Pistons,false,24,1,10,1,4,2,2,0,1,2,1,0,2,3,-18,5,true
+R. Bullock,SF,Pistons,false,21,2,6,1,4,1,1,0,2,1,1,0,1,1,-3,6,true
+A. Baynes,C,Pistons,false,19,2,6,0,0,0,0,5,1,1,0,1,1,2,-9,4,true
+B. Marjanovic,C,Pistons,false,2,1,2,0,0,2,2,0,1,0,0,0,0,0,6,4,true
+I. Smith,PG,Pistons,false,21,6,12,0,0,0,0,0,1,3,1,0,2,2,-19,12,true
+D. Hilliard,SG,Pistons,false,7,1,2,0,1,0,0,0,1,1,0,0,0,0,-2,2,true
+R. Jefferson,SF,Cavaliers,true,26,5,9,4,7,2,3,0,2,1,2,0,1,2,19,16,false
+L. James,SF,Cavaliers,true,28,6,12,0,2,4,5,0,11,12,0,0,2,0,22,16,false
+T. Thompson,C,Cavaliers,true,26,2,4,0,0,0,0,2,7,2,1,2,1,2,20,4,false
+K. Irving,PG,Cavaliers,true,30,9,14,4,4,4,4,1,0,6,0,0,2,1,30,26,false
+I. Shumpert,SG,Cavaliers,true,36,8,13,2,3,0,0,0,5,0,0,0,0,1,17,18,false
+D. Williams,PF,Cavaliers,true,21,4,8,3,5,2,4,0,0,1,0,0,0,2,13,13,true
+C. Frye,PF,Cavaliers,true,20,2,4,2,3,0,0,0,3,1,0,1,0,2,16,6,true
+L. Sanders,PF,Cavaliers,true,2,0,1,0,0,0,0,0,0,0,0,0,0,2,-6,0,true
+D. Williams,PG,Cavaliers,true,14,6,6,1,1,0,0,0,2,3,0,0,1,3,14,13,true
+D. Liggins,SG,Cavaliers,true,7,0,0,0,0,2,2,0,2,2,0,0,1,1,2,2,true
+J. Jones,SG,Cavaliers,true,6,0,1,0,1,2,3,0,1,0,0,0,0,0,0,2,true
+J.R. Smith,SG,Cavaliers,true,23,4,5,3,4,1,2,0,5,1,1,0,1,2,13,12,true
+T. Gibson,PF,Thunder,false,24,8,17,0,0,1,3,4,4,0,1,1,2,4,3,17,false
+A. Roberson,SF,Thunder,false,20,2,4,1,3,2,4,2,1,1,0,1,0,5,13,7,false
+S. Adams,C,Thunder,false,29,4,5,0,0,3,4,2,3,1,2,0,2,5,4,11,false
+R. Westbrook,PG,Thunder,false,35,6,18,2,7,11,13,1,11,19,2,1,5,3,7,25,false
+V. Oladipo,SG,Thunder,false,32,9,15,3,4,0,0,2,1,0,4,0,2,3,1,21,false
+D. Sabonis,PF,Thunder,false,22,2,6,0,0,0,2,0,1,1,0,2,2,2,17,4,true
+J. Grant,SF,Thunder,false,2,0,0,0,0,0,0,0,0,0,1,0,1,0,-2,0,true
+D. McDermott,SF,Thunder,false,14,1,4,1,2,2,2,0,1,0,0,0,0,1,4,5,true
+E. Kanter,C,Thunder,false,19,6,10,0,1,5,6,2,3,2,1,0,1,3,14,17,true
+S. Christon,PG,Thunder,false,17,1,1,0,0,0,0,0,3,3,0,0,0,0,6,2,true
+A. Abrines,SG,Thunder,false,26,5,7,3,5,0,0,0,3,3,2,1,0,1,23,13,true
+R. Hollis-Jefferson,SF,Nets,true,26,1,2,0,0,4,4,2,2,1,2,1,0,3,0,6,false
+B. Lopez,C,Nets,true,29,9,15,3,6,4,4,0,6,0,1,0,2,2,-2,25,false
+J. Lin,PG,Nets,true,26,8,15,2,4,6,6,0,2,5,1,1,3,3,-3,24,false
+R. Foye,SG,Nets,true,28,4,6,3,3,2,2,0,1,4,0,0,1,0,-10,13,false
+C. LeVert,SG,Nets,true,23,4,6,1,2,7,8,1,4,2,3,0,2,2,-2,16,false
+T. Booker,PF,Nets,true,18,3,8,2,2,0,0,0,2,1,0,0,3,3,-11,8,true
+A. Nicholson,PF,Nets,true,2,1,2,0,1,0,0,0,1,0,0,0,0,0,-3,2,true
+Q. Acy,SF,Nets,true,19,0,4,0,3,0,0,1,3,2,1,1,0,3,-17,0,true
+J. Hamilton,C,Nets,true,2,0,0,0,0,0,0,0,0,0,0,0,0,0,-3,0,true
+I. Whitehead,PG,Nets,true,33,2,7,1,2,0,2,0,4,2,0,1,3,4,-15,5,true
+S. Dinwiddie,PG,Nets,true,25,0,4,0,1,3,4,0,0,2,0,0,3,2,-18,3,true
+S. Kilpatrick,SG,Nets,true,7,1,2,0,0,0,0,0,1,1,0,0,1,1,-3,2,true
+K.J. McDaniels,SG,Nets,true,2,0,0,0,0,0,0,0,0,0,0,0,0,0,-3,0,true
+T. Young,PF,Pacers,false,37,2,4,0,1,0,0,1,5,1,1,0,0,1,0,4,false
+C.J. Miles,SF,Pacers,false,25,2,9,2,8,0,0,0,4,0,0,0,0,1,0,6,false
+P. George,SF,Pacers,false,38,9,22,3,8,1,1,2,8,2,0,0,6,2,-2,22,false
+M. Turner,C,Pacers,false,31,8,17,0,0,1,2,6,6,1,1,3,1,3,-2,17,false
+J. Teague,PG,Pacers,false,32,4,15,1,6,0,1,1,7,6,0,0,7,0,-4,9,false
+R. Christmas,PF,Pacers,false,17,0,1,0,0,2,2,2,4,0,1,0,0,3,-4,2,true
+K. Seraphin,C,Pacers,false,6,1,1,0,0,0,0,1,1,0,0,0,0,0,2,2,true
+R. Stuckey,PG,Pacers,false,16,1,6,1,3,3,6,0,1,3,0,0,1,1,0,6,true
+G. Robinson III,SG,Pacers,false,11,1,2,1,2,1,2,1,0,0,0,0,0,0,-8,4,true
+M. Ellis,SG,Pacers,false,25,4,10,0,1,1,1,0,3,3,3,0,1,3,-12,9,true
+K. Porzingis,PF,Knicks,true,25,5,17,1,6,0,0,2,1,3,1,3,2,1,-2,11,false
+L. Thomas,SF,Knicks,true,33,3,9,3,7,0,0,2,5,1,0,0,1,2,-5,9,false
+C. Anthony,SF,Knicks,true,41,8,17,3,6,3,5,0,13,1,1,0,2,0,9,22,false
+D. Rose,PG,Knicks,true,32,7,12,0,1,2,2,0,2,4,0,0,0,0,-1,16,false
+C. Lee,SG,Knicks,true,29,2,9,1,5,0,0,0,7,3,1,0,2,1,7,5,false
+W. Hernangomez,C,Knicks,true,31,6,12,0,0,1,4,6,10,4,3,1,4,3,7,13,true
+C. Randle,PG,Knicks,true,7,0,1,0,1,2,2,0,1,2,0,0,0,3,-3,2,true
+J. Holiday,SG,Knicks,true,20,3,5,1,2,0,0,1,1,0,0,0,0,0,12,7,true
+R. Baker,SG,Knicks,true,22,1,1,0,0,0,0,0,1,3,2,0,3,5,6,2,true
+N. Vonleh,PF,Trail Blazers,false,23,0,2,0,0,3,6,1,9,0,2,0,1,5,-7,3,false
+M. Harkless,SF,Trail Blazers,false,20,1,3,0,2,2,2,0,0,1,0,0,1,3,-17,4,false
+J. Nurkic,C,Trail Blazers,false,22,1,8,0,0,0,0,4,4,0,0,0,4,1,-16,2,false
+D. Lillard,PG,Trail Blazers,false,31,8,18,4,7,9,9,1,2,2,0,0,4,1,-26,29,false
+C. McCollum,SG,Trail Blazers,false,30,4,12,0,3,0,0,0,3,2,0,0,0,2,-15,8,false
+M. Leonard,PF,Trail Blazers,false,25,3,8,3,5,0,0,1,6,3,0,0,1,4,-2,9,true
+J. Layman,SF,Trail Blazers,false,10,0,3,0,1,2,2,0,1,0,0,0,0,2,3,2,true
+A. Aminu,SF,Trail Blazers,false,24,0,3,0,3,1,2,1,9,0,0,0,2,0,-17,1,true
+S. Napier,PG,Trail Blazers,false,19,3,7,2,4,2,3,0,1,3,1,1,1,0,1,10,true
+A. Crabbe,SG,Trail Blazers,false,25,1,8,1,6,1,2,0,2,1,0,0,1,0,-21,4,true
+P. Connaughton,SG,Trail Blazers,false,12,2,4,1,1,0,0,0,3,1,0,0,1,2,2,5,true
+D. Cousins,PF,Pelicans,true,30,9,22,0,5,4,10,1,8,3,3,2,0,2,16,22,false
+A. Davis,PF,Pelicans,true,29,5,15,0,0,5,6,3,12,2,2,3,0,1,22,15,false
+S. Hill,SF,Pelicans,true,31,4,5,2,3,2,2,0,2,0,0,2,1,1,21,12,false
+J. Holiday,PG,Pelicans,true,27,4,6,1,3,1,2,0,1,2,3,0,2,3,22,10,false
+W. Selden Jr.,G,Pelicans,true,15,0,1,0,1,2,4,0,3,1,0,0,1,4,-6,2,false
+D. Motiejunas,PF,Pelicans,true,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,true
+D. Cunningham,PF,Pelicans,true,25,3,4,0,1,0,0,0,10,0,0,0,0,1,8,6,true
+A. Ajinca,C,Pelicans,true,5,1,1,0,0,0,0,0,0,0,0,0,0,1,-4,2,true
+T. Frazier,PG,Pelicans,true,24,2,6,1,2,2,2,0,5,7,1,0,0,3,3,7,true
+E. Moore,SG,Pelicans,true,30,5,9,0,1,1,2,0,3,3,1,1,1,2,18,11,true
+J. Crawford,SG,Pelicans,true,23,5,11,2,5,1,2,0,0,1,0,0,0,0,15,13,true
+D. Saric,PF,76ers,false,37,11,20,2,6,1,2,0,7,6,3,2,6,2,-4,25,false
+R. Covington,SF,76ers,false,32,1,8,1,4,4,4,2,7,3,2,1,1,3,3,7,false
+J. Okafor,C,76ers,false,23,8,15,0,0,6,7,2,4,1,1,4,3,2,-3,22,false
+T. McConnell,PG,76ers,false,31,3,7,0,0,1,2,0,7,10,2,0,4,3,12,7,false
+T. Luwawu-Cabarrot,SG,76ers,false,23,4,7,1,2,1,2,0,3,2,1,0,1,5,14,10,false
+S. Long,PF,76ers,false,4,0,1,0,0,0,2,1,0,0,0,0,1,3,-5,0,true
+R. Holmes,PF,76ers,false,21,6,10,1,2,1,1,3,5,1,1,2,2,4,6,14,true
+S. Rodriguez,PG,76ers,false,17,1,7,1,6,0,0,1,0,3,0,0,0,2,-14,3,true
+G. Henderson,SG,76ers,false,20,3,7,1,3,2,5,2,3,0,0,0,1,1,-21,9,true
+J. Anderson,SG,76ers,false,7,0,0,0,0,0,0,0,0,0,1,0,0,0,3,0,true
+N. Stauskas,SG,76ers,false,26,2,6,1,4,2,2,1,2,2,0,0,2,1,-1,7,true
+D. Green,PF,Warriors,true,38,4,12,1,4,11,14,3,5,8,4,6,1,4,15,20,false
+Z. Pachulia,C,Warriors,true,12,0,5,0,0,2,2,1,4,1,2,1,3,3,-11,2,false
+S. Curry,PG,Warriors,true,37,8,23,5,13,8,8,2,4,5,3,0,5,3,3,29,false
+P. McCaw,PG,Warriors,true,14,1,2,0,0,0,0,0,0,2,0,0,2,0,-13,2,false
+K. Thompson,SG,Warriors,true,38,10,22,5,9,3,3,1,1,1,0,0,1,1,-7,28,false
+D. West,PF,Warriors,true,11,1,1,0,0,0,0,0,3,1,0,2,2,2,12,2,true
+M. Barnes,SF,Warriors,true,22,3,7,2,4,2,2,3,6,2,1,1,2,4,1,10,true
+J. McAdoo,SF,Warriors,true,8,0,2,0,0,0,2,3,0,0,1,0,1,2,-10,0,true
+A. Iguodala,SF,Warriors,true,33,3,8,1,1,0,0,0,1,3,0,0,0,3,11,7,true
+J. McGee,C,Warriors,true,3,1,1,0,0,0,2,0,0,0,0,0,0,1,3,2,true
+S. Livingston,PG,Warriors,true,12,1,1,0,0,2,2,0,2,0,0,0,0,1,9,4,true
+I. Clark,SG,Warriors,true,12,0,3,0,1,0,0,0,3,1,1,0,1,0,-3,0,true

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBADailyFantasyOptimizer", "NBADailyFantasyOptimizer\NBADailyFantasyOptimizer.csproj", "{B0C74083-7BFF-41D4-B74D-B0B20627CF86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLTestCore", "MLTestCore\MLTestCore.csproj", "{B451E5BB-D5B0-46A6-973B-C3DEE7CEA322}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B0C74083-7BFF-41D4-B74D-B0B20627CF86} = {B0C74083-7BFF-41D4-B74D-B0B20627CF86}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLGeneticAlgorithm", "MLGeneticAlgorithm\MLGeneticAlgorithm.csproj", "{CA801157-6C75-489E-A8A7-EE88D1665E51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0C74083-7BFF-41D4-B74D-B0B20627CF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C74083-7BFF-41D4-B74D-B0B20627CF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C74083-7BFF-41D4-B74D-B0B20627CF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C74083-7BFF-41D4-B74D-B0B20627CF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B451E5BB-D5B0-46A6-973B-C3DEE7CEA322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B451E5BB-D5B0-46A6-973B-C3DEE7CEA322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B451E5BB-D5B0-46A6-973B-C3DEE7CEA322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B451E5BB-D5B0-46A6-973B-C3DEE7CEA322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA801157-6C75-489E-A8A7-EE88D1665E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA801157-6C75-489E-A8A7-EE88D1665E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA801157-6C75-489E-A8A7-EE88D1665E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA801157-6C75-489E-A8A7-EE88D1665E51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AA8D32C3-B43F-4D4A-87AD-44C2BD5CBFDD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+M. Morris,PF,Wizards,false,32,8,12,3,4,2,2,2,5,2,2,0,1,3,20,21,false
+O. Porter Jr.,SF,Wizards,false,35,9,15,6,10,1,1,1,7,2,0,1,0,1,20,25,false
+M. Gortat,C,Wizards,false,34,6,10,0,0,0,0,1,6,0,1,0,1,3,14,12,false
+J. Wall,PG,Wizards,false,37,8,20,0,2,4,4,0,2,12,1,2,5,2,18,20,false
+B. Beal,SG,Wizards,false,36,7,14,4,7,1,2,1,2,4,1,0,2,3,15,19,false
+J. Smith,PF,Wizards,false,13,1,2,1,1,0,0,1,2,0,0,0,0,2,-8,3,true
+K. Oubre Jr.,SF,Wizards,false,16,1,4,0,2,1,2,1,0,1,0,0,0,1,-6,3,true
+I. Mahinmi,C,Wizards,false,13,2,2,0,0,1,4,0,4,0,0,0,0,3,-1,5,true
+T. Burke,PG,Wizards,false,13,1,3,1,2,0,0,0,3,2,0,0,1,0,-1,3,true
+T. Satoransky,SG,Wizards,false,10,0,1,0,1,0,0,1,0,0,0,0,0,1,-6,0,true
+S. McClellan,SG,Wizards,false,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,true
+P. George,SF,Pacers,true,37,6,19,1,7,4,4,0,7,3,2,0,3,1,-17,17,false
+K. Seraphin,C,Pacers,true,25,4,8,0,0,1,2,2,3,1,0,0,2,2,-12,9,false
+M. Turner,C,Pacers,true,37,6,13,0,1,5,7,3,6,1,2,1,2,3,-15,17,false
+J. Teague,PG,Pacers,true,27,3,7,0,3,0,0,0,6,5,0,0,3,0,-9,6,false
+G. Robinson III,SG,Pacers,true,24,4,6,1,2,1,1,0,1,1,0,0,0,1,-3,10,false
+C.J. Miles,SF,Pacers,true,26,3,7,0,1,0,0,0,1,1,2,0,0,1,3,6,true
+A. Jefferson,C,Pacers,true,11,6,8,0,0,0,0,0,3,0,0,0,0,4,2,12,true
+R. Stuckey,PG,Pacers,true,21,4,6,2,3,2,2,0,0,2,1,0,0,0,-4,12,true
+M. Ellis,SG,Pacers,true,31,4,7,0,1,1,2,0,3,7,0,0,0,0,-10,9,true
+A. Johnson,PF,Celtics,false,17,5,6,0,0,0,0,0,2,0,1,2,1,2,-6,10,false
+J. Crowder,SF,Celtics,false,33,3,8,0,4,1,2,2,1,0,0,0,1,3,-6,7,false
+A. Horford,C,Celtics,false,27,3,10,1,5,0,0,0,2,3,0,1,0,1,-11,7,false
+I. Thomas,PG,Celtics,false,34,8,18,4,9,9,9,0,3,7,0,0,3,3,-10,29,false
+M. Smart,PG,Celtics,false,33,1,5,0,1,3,4,1,3,3,1,0,1,4,0,5,false
+J. Jerebko,PF,Celtics,false,11,1,2,0,1,0,0,0,3,0,0,0,0,1,7,2,true
+G. Green,SF,Celtics,false,12,2,5,2,4,0,0,1,2,0,0,0,1,0,4,6,true
+T. Zeller,C,Celtics,false,9,2,2,0,0,0,0,0,0,4,0,0,0,0,3,4,true
+K. Olynyk,C,Celtics,false,32,6,10,3,6,2,3,0,7,4,0,0,0,2,5,17,true
+T. Rozier,PG,Celtics,false,23,3,8,3,6,2,2,0,3,3,0,1,0,2,8,11,true
+J. Young,SG,Celtics,false,9,2,3,1,1,0,0,0,1,0,0,0,0,0,1,5,true
+T. Gibson,PF,Bulls,true,28,5,8,0,0,2,2,3,6,2,0,0,1,1,8,12,false
+J. Butler,SF,Bulls,true,40,9,20,2,5,9,9,2,2,7,0,1,1,2,10,29,false
+R. Lopez,C,Bulls,true,27,7,13,0,0,1,1,5,3,2,0,2,1,1,7,15,false
+J. Grant,PG,Bulls,true,28,3,10,2,7,2,2,0,2,1,0,0,0,0,6,10,false
+M. Carter-Williams,PG,Bulls,true,22,1,6,0,2,2,2,1,5,3,0,1,0,3,8,4,false
+B. Portis,PF,Bulls,true,26,8,13,1,4,2,2,1,7,0,0,1,2,0,-4,19,true
+C. Felicio,PF,Bulls,true,16,1,3,0,0,2,2,2,3,0,0,0,0,3,-9,4,true
+D. McDermott,SF,Bulls,true,30,4,12,1,6,2,2,0,2,0,1,0,0,0,-7,11,true
+R. Rondo,PG,Bulls,true,20,0,5,0,1,0,0,1,6,8,1,1,2,3,-7,0,true
+D. Valentine,SG,Bulls,true,5,0,0,0,0,0,0,0,0,0,0,0,0,0,-7,0,true

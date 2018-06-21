@@ -1,0 +1,49 @@
+TODO: 
+Re-mutate any duplicates.
+run for each stat and then add up stats.
+add all projection sources to different fields.
+parallelize
+
+
+Pred
+10			8
+8			1
+245			239
+352			302
+
+Proj
+16			17
+3			4
+251			249
+305			319
+
+Full proj
+13
+3
+244
+348
+
+
+Three Pointers Made: 1259.591
+LastGameProjDiffRatio, LastGameMinutes, IsHome, LastGameAssists, LastGameFreethrowsMade, Salary, LastGameOffensiveRebounds, FantasyPointsPerGame, Id, Team, Position, TopPlayerForTeam, LastGameThreePointersAttempted, LastGamePlusMinus, LastGamePoints, (ThreePointersMade)
+
+Points: 7013.789
+LastGameSteals, LastGameProjDiffRatio, Roi, LastGamePersonalFouls, ProjectionRg, FantasyPointsPerGame, Id, Opponent, Position, LastGameProjection, LastGameFieldGoalsAttempted, LastGameFreethrowsAttempted, IsBench, LastGameOffensiveRebounds, LastGameDefensiveRebounds, LastGameAssists, (Points)
+
+Defensive Rebounds: 2601.202
+LastGameThreePointersMade, LastGameAct, LastGameBlocks, SeasonCeiling, Id, Team, Opponent, Position, Salary, LastGameDiff, Roi, LastGameMinutes, LastGameFieldGoalsMade, LastGameTurnovers, ProjectionRg, (Defensive Rebounds)
+
+Offensive Rebounds: 1385.382
+LastGameFieldGoalsMade, LastGameFieldGoalsAttempted, Salary, Id, Team, Position, Projection, TopPlayerForTeam, LastGameThreePointersAttempted, LastGameSteals, LastGameTurnovers, (Offensive Rebounds)
+
+Assists: 2108.522
+FantasyPointsPerGame, SeasonCeiling, LastGameDefensiveRebounds, Id, Team, Position, Projection, IsHome, LastGameAssists, (Assists)
+
+Steals: 1189.465
+LastGameTurnovers, LastGamePoints, Salary, LastGameAssists, LastGameDefensiveRebounds, SeasonFloor, LastGameMinutes, Id, Opponent, Position, Projection, LastGameProjection, FantasyPointsPerGame, IsBench, LastGameThreePointersAttempted, LastGameOffensiveRebounds, LastGameBlocks, LastGamePersonalFouls, ProjectionRg, SeasonCeiling, (Steals)
+
+Blocks: 862.0497
+LastGameDefensiveRebounds, LastGameSteals, FantasyPointsPerGame, LastGameThreePointersAttempted, TopPlayerAtPositionForTeam, LastGameFieldGoalsAttempted, LastGamePersonalFouls, ProjectionRg, Roi, Id, Team, Opponent, Position, LastGameAct, LastGameProjDiffRatio, LastGameBlocks, SeasonFloor, (Blocks)
+
+Turnovers: 1464.295
+IsBench, LastGameAssists, LastGameProjDiffRatio, FantasyPointsPerGame, LastGameFieldGoalsAttempted, LastGameBlocks, LastGameFreethrowsAttempted, Team, Position, LastGameFreethrowsMade, LastGameOffensiveRebounds, LastGameTurnovers, ProjectionRg, (Turnovers)
