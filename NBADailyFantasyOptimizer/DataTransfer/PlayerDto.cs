@@ -53,6 +53,15 @@ namespace NBADailyFantasyOptimizer.DataTransfer
         public float PlusMinus { get; set; }
         public float Points { get; set; }
 
+        public float PredThreePointersMade { get; set; }
+        public float PredOffensiveRebounds { get; set; }
+        public float PredDefensiveRebounds { get; set; }
+        public float PredAssists { get; set; }
+        public float PredSteals { get; set; }
+        public float PredBlocks { get; set; }
+        public float PredTurnovers { get; set; }
+        public float PredPoints { get; set; }
+
         public void AddProjection(ProjectionDto projection)
         {
             if(projection == null)
@@ -91,7 +100,25 @@ namespace NBADailyFantasyOptimizer.DataTransfer
             if (isActualDay)
             {
                 Minutes = actuals.Minutes;
-                ActualPoints = ActualResults.OrderByDescending(s => s.Day).First().ActualPoints;
+                ActualPoints = actuals.ActualPoints;
+                ThreePointersMade = actuals.ThreePointersMade;
+                ThreePointersAttempted = actuals.ThreePointersAttempted;
+                FieldGoalsAttempted = actuals.FieldGoalsAttempted;
+                FieldGoalsMade = actuals.FieldGoalsMade;
+                Points = actuals.Points;
+                Assists = actuals.Assists;
+                DefensiveRebounds = actuals.DefensiveRebounds;
+                OffensiveRebounds = actuals.OffensiveRebounds;
+                Turnovers = actuals.Turnovers;
+                Minutes = actuals.Minutes;
+                PlusMinus = actuals.PlusMinus;
+                FreethrowsAttempted = actuals.FreethrowsAttempted;
+                FreethrowsMade = actuals.FreethrowsMade;
+                Steals = actuals.Steals;
+                Blocks = actuals.Blocks;
+                PersonalFouls = actuals.PersonalFouls;
+                IsHome = actuals.IsHome;
+                IsBench = actuals.IsBench;
             }
             else
             {

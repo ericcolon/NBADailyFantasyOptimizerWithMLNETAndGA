@@ -312,7 +312,9 @@ namespace NBADailyFantasyOptimizer.Service
         {
             //players.ToList().ForEach(s => s.Projection = s.ActualResultsBeforeDay != null && s.ActualResultsBeforeDay.Count > 1 ? (s.ActualResultsBeforeDay.Average(f => f.ActualPoints) + s.Projection) / 2 : s.Projection);
 
+           // players.RemoveAll(s => s.Position != "PG");
 
+            players.RemoveAll(s => s.Minutes < 20);
 
             players.RemoveAll(p => p.Projection <= 0);
             players.RemoveAll(p => p.Roi < .75);

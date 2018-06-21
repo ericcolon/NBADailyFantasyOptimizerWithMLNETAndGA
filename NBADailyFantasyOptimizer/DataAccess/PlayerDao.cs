@@ -14,29 +14,6 @@ namespace NBADailyFantasyOptimizer.DataAccess
 
     public class PlayerDao : IPlayerDao
     {
-        private void FilterUnneededPlayers(List<PlayerDto> players, double percToRemove, int day, int projToRemove)
-        {
-            //players.ToList().ForEach(s => s.Projection = s.ActualResultsBeforeDay != null && s.ActualResultsBeforeDay.Count > 1 ? (s.ActualResultsBeforeDay.Average(f => f.ActualPoints) + s.Projection) / 2 : s.Projection);
-
-
-
-
-            players.RemoveAll(p => p.Projection <= 0);
-            players.RemoveAll(p => p.Roi < percToRemove);
-            players.RemoveAll(p => p.InjuryStatus != null && ConstantDto.RemoveInjuryStatuses.Contains(p.InjuryStatus));
-            players.RemoveAll(p => p.Projection < 1);
-
-
-            players = players.Where(s => s.InjuryStatus == null || string.IsNullOrWhiteSpace(s.InjuryStatus)).ToList();
-            players = players.Where(s => s.ActualPoints > 7 && s.Projection > 7).ToList();
-
-            var teams = new HashSet<string> { };
-            var names = new HashSet<string> { };
-
-            players.RemoveAll(s => names.Any(n => n == s.Name));
-            players.RemoveAll(s => teams.Any(t => t == s.Team));
-        }
-
         public List<PlayerDto> GetAllPlayers(int day)
         {
             var players = GetAllPlayerSalaries(day).ToList();

@@ -28,8 +28,8 @@ namespace MLGeneticAlgorithm
             players.RemoveAll(s => !s.ActualResultsBeforeDay.Any() || !s.Projections.Any(z => z.Day < s.Day));
 
             //Update BOTH of these!!!!!!!!!!!!!!!!!!!!
-            players.ForEach(s => s.ActualPoints = s.ActualResults.Find(z => z.Day == s.Day)?.Turnovers ?? 0);
-            testPlayerDtos.ForEach(s => s.ActualPoints = s.ActualResults.Find(z => z.Day == s.Day)?.Turnovers ?? 0);
+            //players.ForEach(s => s.ActualPoints = s.ActualResults.Find(z => z.Day == s.Day)?.Turnovers ?? 0);
+            //testPlayerDtos.ForEach(s => s.ActualPoints = s.ActualResults.Find(z => z.Day == s.Day)?.Turnovers ?? 0);
 
             List<PlayerInfo> playerInfosToSeed = new List<PlayerInfo>();
             var seed1FieldNames = new List<string> { "LastGameProjDiffRatio", "LastGameMinutes", "IsHome", "LastGameAssists", "LastGameFreethrowsMade", "Salary", "LastGameOffensiveRebounds", "FantasyPointsPerGame", "Id", "Team", "Position", "TopPlayerForTeam", "LastGameThreePointersAttempted", "LastGamePlusMinus", "LastGamePoints", "ActualPoints" };

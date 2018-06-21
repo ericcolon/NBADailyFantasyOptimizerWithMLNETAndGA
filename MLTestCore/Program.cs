@@ -41,7 +41,7 @@ namespace MLTestCore
             var stealsLabels = new List<string> { "LastGameTurnovers", "LastGamePoints", "Salary", "LastGameAssists", "LastGameDefensiveRebounds", "SeasonFloor", "LastGameMinutes", "Id", "Opponent", "Position", "Projection", "LastGameProjection", "FantasyPointsPerGame", "IsBench", "LastGameThreePointersAttempted", "LastGameOffensiveRebounds", "LastGameBlocks", "LastGamePersonalFouls", "ProjectionRg", "SeasonCeiling", "ActualPoints" };
             var blocksLabels = new List<string> { "LastGameDefensiveRebounds", "LastGameSteals", "FantasyPointsPerGame", "LastGameThreePointersAttempted", "TopPlayerAtPositionForTeam", "LastGameFieldGoalsAttempted", "LastGamePersonalFouls", "ProjectionRg", "Roi", "Id", "Team", "Opponent", "Position", "LastGameAct", "LastGameProjDiffRatio", "LastGameBlocks", "SeasonFloor", "ActualPoints" };
             var turnoversLabels = new List<string> { "IsBench", "LastGameAssists", "LastGameProjDiffRatio", "FantasyPointsPerGame", "LastGameFieldGoalsAttempted", "LastGameBlocks", "LastGameFreethrowsAttempted", "Team", "Position", "LastGameFreethrowsMade", "LastGameOffensiveRebounds", "LastGameTurnovers", "ProjectionRg", "ActualPoints" };
-
+            
             var threePointerFields = typeof(Player).GetFields().Where(f => threePointerLabels.Contains(f.Name)).ToList();
             if (threePointerFields.Count != threePointerLabels.Count)
                 throw new Exception("Misspelled field probably!");
@@ -49,7 +49,7 @@ namespace MLTestCore
             var threePointerObjs = TypeService.CloneObjectsToNewObjectType(playersToTrain.Select(Player.From).ToList(), threePointerFields);
             var threePointerModel = trainingService.Train<Player, PointPrediction>(threePointerObjs.Select(s => ((Player)s)).ToList(), "ActualPoints");
             trainingService.Predict(threePointerModel, testPs);
-            testPDtos.ForEach(s => s.ThreePointersMade = testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0);
+            testPDtos.ForEach(s => s.PredThreePointersMade = (float)Math.Max(testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0, 0));
 
 
             var pointsFields = typeof(Player).GetFields().Where(f => pointsLabels.Contains(f.Name)).ToList();
@@ -59,7 +59,7 @@ namespace MLTestCore
             var pointsObjs = TypeService.CloneObjectsToNewObjectType(playersToTrain.Select(Player.From).ToList(), pointsFields);
             var pointsModel = trainingService.Train<Player, PointPrediction>(pointsObjs.Select(s => ((Player)s)).ToList(), "ActualPoints");
             trainingService.Predict(pointsModel, testPs);
-            testPDtos.ForEach(s => s.Points = testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0);
+            testPDtos.ForEach(s => s.PredPoints = (float)Math.Max(testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0, 0));
 
 
             var defensiveReboundsFields = typeof(Player).GetFields().Where(f => defensiveReboundsLabels.Contains(f.Name)).ToList();
@@ -69,7 +69,7 @@ namespace MLTestCore
             var defensiveReboundsObjs = TypeService.CloneObjectsToNewObjectType(playersToTrain.Select(Player.From).ToList(), defensiveReboundsFields);
             var defensiveReboundsModel = trainingService.Train<Player, PointPrediction>(defensiveReboundsObjs.Select(s => ((Player)s)).ToList(), "ActualPoints");
             trainingService.Predict(defensiveReboundsModel, testPs);
-            testPDtos.ForEach(s => s.DefensiveRebounds = testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0);
+            testPDtos.ForEach(s => s.PredDefensiveRebounds = (float)Math.Max(testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0, 0));
 
             var offensiveReboundsFields = typeof(Player).GetFields().Where(f => offensiveReboundsLabels.Contains(f.Name)).ToList();
             if (offensiveReboundsFields.Count != offensiveReboundsLabels.Count)
@@ -78,7 +78,7 @@ namespace MLTestCore
             var offensiveReboundsObjs = TypeService.CloneObjectsToNewObjectType(playersToTrain.Select(Player.From).ToList(), offensiveReboundsFields);
             var offensiveReboundsModel = trainingService.Train<Player, PointPrediction>(offensiveReboundsObjs.Select(s => ((Player)s)).ToList(), "ActualPoints");
             trainingService.Predict(offensiveReboundsModel, testPs);
-            testPDtos.ForEach(s => s.OffensiveRebounds = testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0);
+            testPDtos.ForEach(s => s.PredOffensiveRebounds = (float)Math.Max(testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0, 0));
 
 
             var assistsFields = typeof(Player).GetFields().Where(f => assistsLabels.Contains(f.Name)).ToList();
@@ -88,7 +88,7 @@ namespace MLTestCore
             var assistsObjs = TypeService.CloneObjectsToNewObjectType(playersToTrain.Select(Player.From).ToList(), assistsFields);
             var assistsModel = trainingService.Train<Player, PointPrediction>(assistsObjs.Select(s => ((Player)s)).ToList(), "ActualPoints");
             trainingService.Predict(assistsModel, testPs);
-            testPDtos.ForEach(s => s.Assists = testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0);
+            testPDtos.ForEach(s => s.PredAssists = (float)Math.Max(testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0, 0));
 
 
             var stealsFields = typeof(Player).GetFields().Where(f => stealsLabels.Contains(f.Name)).ToList();
@@ -98,7 +98,7 @@ namespace MLTestCore
             var stealsObjs = TypeService.CloneObjectsToNewObjectType(playersToTrain.Select(Player.From).ToList(), stealsFields);
             var stealsModel = trainingService.Train<Player, PointPrediction>(stealsObjs.Select(s => ((Player)s)).ToList(), "ActualPoints");
             trainingService.Predict(stealsModel, testPs);
-            testPDtos.ForEach(s => s.Steals = testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0);
+            testPDtos.ForEach(s => s.PredSteals = (float)Math.Max(testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0, 0));
 
 
             var blocksFields = typeof(Player).GetFields().Where(f => blocksLabels.Contains(f.Name)).ToList();
@@ -108,7 +108,7 @@ namespace MLTestCore
             var blocksObjs = TypeService.CloneObjectsToNewObjectType(playersToTrain.Select(Player.From).ToList(), blocksFields);
             var blocksModel = trainingService.Train<Player, PointPrediction>(blocksObjs.Select(s => ((Player)s)).ToList(), "ActualPoints");
             trainingService.Predict(blocksModel, testPs);
-            testPDtos.ForEach(s => s.Blocks = testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0);
+            testPDtos.ForEach(s => s.PredBlocks = (float)Math.Max(testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0, 0));
 
 
             var turnoversFields = typeof(Player).GetFields().Where(f => turnoversLabels.Contains(f.Name)).ToList();
@@ -118,29 +118,40 @@ namespace MLTestCore
             var turnoversObjs = TypeService.CloneObjectsToNewObjectType(playersToTrain.Select(Player.From).ToList(), turnoversFields);
             var turnoversModel = trainingService.Train<Player, PointPrediction>(turnoversObjs.Select(s => ((Player)s)).ToList(), "ActualPoints");
             trainingService.Predict(turnoversModel, testPs);
-            testPDtos.ForEach(s => s.Turnovers = testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0);
+            testPDtos.ForEach(s => s.PredTurnovers = Math.Max(testPs.First(z => z.Id == s.Id && z.Day == s.Day)?.Pred ?? 0, 0));
 
             var totalProj = testPDtos.Sum(s => Math.Abs(s.Projection - s.ActualPoints));
-            Console.WriteLine("Proj: " + totalProj);
+            var totalProjsOver = testPDtos.Count(s => s.Projection > s.ActualPoints);
+            var totalProjsUnder = testPDtos.Count(s => s.Projection < s.ActualPoints);
+            var totalProjDifference = testPDtos.Sum(s => s.Projection - s.ActualPoints);
 
             testPDtos.ForEach(s => s.SeasonAverage = (float)s.Projection);
             testPDtos.ForEach(s =>
             {
-                s.Projection = Math.Round(s.ThreePointersMade * ConstantDto.ThreePointPoints
-               + s.Points * ConstantDto.PointPoints
-               + (s.OffensiveRebounds + s.DefensiveRebounds) * ConstantDto.ReboundPoints
-               + s.Assists * ConstantDto.AssistPoints
-               + s.Steals * ConstantDto.StealPoints
-               + s.Blocks * ConstantDto.BlockPoints
-               + s.Turnovers * ConstantDto.TurnoverPoints, 2);
+                s.Projection = Math.Round(s.PredThreePointersMade * ConstantDto.ThreePointPoints
+               + s.PredPoints * ConstantDto.PointPoints
+               + (s.PredOffensiveRebounds + s.PredDefensiveRebounds) * ConstantDto.ReboundPoints
+               + s.PredAssists * ConstantDto.AssistPoints
+               + s.PredSteals * ConstantDto.StealPoints
+               + s.PredBlocks * ConstantDto.BlockPoints
+               + s.PredTurnovers * ConstantDto.TurnoverPoints, 2);
             });
 
 
             //var model = trainingService.Train<Player, PointPrediction>(playersToTrain.Select(Player.From).ToList(), "ActualPoints");
             //trainingService.Predict(model, testPs);
-            testPDtos = testPDtos.OrderByDescending(s => Math.Abs(s.SeasonAverage - s.ActualPoints) - Math.Abs(s.Projection - s.ActualPoints)).ToList();
-            testPDtos.ForEach(s => Console.WriteLine(s.Name + " Pred=" + s.Projection + " Proj=" + s.SeasonAverage + " Act:" + s.ActualPoints + "-" + s.ThreePointersMade + "-" + s.Points + "-" + s.OffensiveRebounds + "-" + s.DefensiveRebounds + "-" + s.Assists + "-" + s.Steals + "-" + s.Blocks + "-" + s.Turnovers));
-            ProjMain(startTestingDay, endTestingDay, testPDtos);
+            //testPDtos = testPDtos.OrderByDescending(s => Math.Abs(s.SeasonAverage - s.ActualPoints) - Math.Abs(s.Projection - s.ActualPoints)).ToList();
+            testPDtos = testPDtos.OrderBy(s => Math.Abs(s.PredThreePointersMade - s.ThreePointersMade)).ToList();
+            testPDtos.ForEach(s => Console.WriteLine(s.Name + " " + s.Position + " Sal: " + s.Salary + " Pred=" + s.Projection + " Proj=" + s.SeasonAverage + " Act:" + s.ActualPoints + 
+                "  -" + Math.Round(s.PredThreePointersMade) + " " + s.ThreePointersMade +
+                "  -" + Math.Round(s.PredPoints) + " " + s.Points +
+                "  -" + Math.Round(s.PredOffensiveRebounds) + " " + s.OffensiveRebounds +
+                "  -" + Math.Round(s.PredDefensiveRebounds) + " " + s.DefensiveRebounds +
+                "  -" + Math.Round(s.PredAssists) + " " + s.Assists +
+                "  -" + Math.Round(s.PredSteals) + " " + s.Steals +
+                "  -" + Math.Round(s.PredBlocks) + " " + s.Blocks +
+                "  -" + Math.Round(s.PredTurnovers) + " " + s.Turnovers));
+            //ProjMain(startTestingDay, endTestingDay, testPDtos);
 
 
             //var asdf = testPDtos.Where(s => s.Pred == 0).ToList();
@@ -148,9 +159,12 @@ namespace MLTestCore
             // var asdfads = aaa.Max(s => Math.Abs(s.Pred - s.ActualPoints) - Math.Abs(s.Projection - s.ActualPoints));
             //var adfasdf = aaa.OrderByDescending(s => Math.Abs(s.Pred - s.ActualPoints) - Math.Abs(s.Projection - s.ActualPoints)).ToList();
 
-            Console.WriteLine("Proj: " + totalProj);
-            var totalPred = testPDtos.Sum(s => Math.Abs(s.Projection - s.ActualPoints));
-            Console.WriteLine("Pred: " + totalPred);
+            Console.WriteLine("Proj: " + totalProj + " - ProjsOver: " + totalProjsOver + " - ProjsUnder: " + totalProjsUnder + " - ProjDiff: " + totalProjDifference);
+            var totalPred = testPDtos.Sum(s => Math.Abs(Math.Round(s.Projection) - s.ActualPoints));
+            var totalPredsOver = testPDtos.Count(s => Math.Round(s.Projection) > s.ActualPoints);
+            var totalPredsUnder = testPDtos.Count(s => Math.Round(s.Projection) < s.ActualPoints);
+            var totalPredDifference = testPDtos.Sum(s => Math.Round(s.Projection) - s.ActualPoints);
+            Console.WriteLine("Pred: " + totalPred + " - PredsOver: " + totalPredsOver + " - PredsUnder: " + totalPredsUnder + " - PredDiff: " + totalPredDifference);
 
             var totalAct = testPDtos.Sum(s => Math.Abs(s.ActualPoints));
             Console.WriteLine("Act: " + totalAct);

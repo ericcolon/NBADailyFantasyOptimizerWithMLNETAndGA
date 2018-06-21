@@ -85,11 +85,29 @@ namespace MLTestCore.Data
 
         public static Player From(PlayerDto dto)
         {
-            var descGames = dto.ActualResultsBeforeDay.OrderByDescending(s => s.Day);
+            var descGames = dto.ActualResultsBeforeDay.Where(s => s.Minutes > 19).OrderByDescending(s => s.Day).Take(2);
             ActualResultsDto gameBeforeToday = null;
             if(descGames.Count() > 1)
             {
                 gameBeforeToday = descGames.ToList()[0];
+                gameBeforeToday.ThreePointersMade = descGames.Average(s => s.ThreePointersMade);
+                gameBeforeToday.Points = descGames.Average(s => s.Points);
+                gameBeforeToday.Assists = descGames.Average(s => s.Assists);
+                gameBeforeToday.Blocks = descGames.Average(s => s.Blocks);
+                gameBeforeToday.Turnovers = descGames.Average(s => s.Turnovers);
+                gameBeforeToday.ActualPoints = descGames.Average(s => s.ActualPoints);
+                gameBeforeToday.DefensiveRebounds = descGames.Average(s => s.DefensiveRebounds);
+                gameBeforeToday.OffensiveRebounds = descGames.Average(s => s.OffensiveRebounds);
+                gameBeforeToday.ThreePointersAttempted = descGames.Average(s => s.ThreePointersAttempted);
+                gameBeforeToday.FieldGoalsAttempted = descGames.Average(s => s.FieldGoalsAttempted);
+                gameBeforeToday.FieldGoalsMade = descGames.Average(s => s.FieldGoalsMade);
+                gameBeforeToday.FreethrowsAttempted = descGames.Average(s => s.FreethrowsAttempted);
+                gameBeforeToday.FreethrowsMade = descGames.Average(s => s.FreethrowsMade);
+                gameBeforeToday.PlusMinus = descGames.Average(s => s.PlusMinus);
+                gameBeforeToday.Steals = descGames.Average(s => s.Steals);
+                gameBeforeToday.Projection = descGames.Average(s => s.Projection);
+                gameBeforeToday.PersonalFouls = descGames.Average(s => s.PersonalFouls);
+                gameBeforeToday.Minutes = descGames.Average(s => s.Minutes);
             }
 
             var todaysGame = dto.ActualResults.Find(s => s.Day == dto.Day);
